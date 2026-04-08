@@ -1,0 +1,50 @@
+# =============================================================================
+# VoiceFlow — Python dependencies
+# =============================================================================
+
+# --- Audio -------------------------------------------------------------------
+sounddevice>=0.4.6          # Cross-platform mic capture (WASAPI/ALSA/CoreAudio)
+numpy>=1.24.0               # Audio array manipulation
+
+# Voice Activity Detection (choose one):
+webrtcvad-wheels>=2.0.14    # Google WebRTC VAD — recommended
+# webrtcvad>=2.0.10         # Alternative (may require build tools on Windows)
+
+# --- ASR (Local) -------------------------------------------------------------
+faster-whisper>=1.0.3       # CTranslate2-backed Whisper — 4x faster than original
+
+# --- ASR (NVIDIA NIM) --------------------------------------------------------
+requests>=2.31.0            # HTTP client for NIM REST API
+
+# --- Text Injection ----------------------------------------------------------
+pyperclip>=1.8.2            # Cross-platform clipboard access
+keyboard>=0.13.5            # Global keyboard control + hotkeys (fallback)
+
+# --- Global Hotkeys ----------------------------------------------------------
+pynput>=1.7.6               # System-wide keyboard/mouse listener
+
+# --- Configuration -----------------------------------------------------------
+pyyaml>=6.0.1               # YAML config file parsing
+
+# --- LLM Polish (optional) ---------------------------------------------------
+# ollama>=0.3.0             # Ollama Python client (uncomment if using Ollama polish)
+
+# --- UI ----------------------------------------------------------------------
+Pillow>=10.0.0              # For smooth orb rendering (optional but recommended)
+
+# =============================================================================
+# Optional / GPU acceleration
+# =============================================================================
+# Uncomment for CUDA GPU acceleration with faster-whisper:
+# torch>=2.0.0+cu121        # Install from https://pytorch.org
+# nvidia-cublas-cu12
+# nvidia-cudnn-cu12
+
+# =============================================================================
+# Development & testing
+# =============================================================================
+pytest>=7.4.0
+pytest-cov>=4.1.0
+black>=23.0.0
+ruff>=0.1.0
+mypy>=1.5.0
