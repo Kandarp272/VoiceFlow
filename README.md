@@ -33,7 +33,7 @@ Press a hotkey. Speak. Your words appear wherever your cursor is — instantly, 
 ### 1. Clone & Install
 
 ```bash
-git clone https://github.com/yourusername/voiceflow.git
+git clone https://github.com/Kandarp272/VoiceFlow
 cd voiceflow
 python install.py
 ```
